@@ -5,7 +5,7 @@ public class DinnerEventDemo {
         eventTypeMenu();
         int option, guests, entree, side1, side2, dessert;
         String eventNum;
-        DinnerEvent dinnerEvents[] = new DinnerEvent[2];
+        DinnerEvent dinnerEvents[] = new DinnerEvent[4];
         for (int i = 0; i < dinnerEvents.length; i++) {
             eventNum = getEventNumber();
             guests = getGuests();
@@ -15,6 +15,7 @@ public class DinnerEventDemo {
             dessert = getDessert();
 
             dinnerEvents[i] = new DinnerEvent(eventNum, guests, entree, side1, side2, dessert);
+            dinnerEvents[i].setGuests(guests);
             dinnerEvents[i].setContactPhoneNumber(getContactPhone());
             dinnerEvents[i].setEventType(getEventType());
         }
