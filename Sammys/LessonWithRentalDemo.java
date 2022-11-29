@@ -5,7 +5,7 @@ public class LessonWithRentalDemo {
         equipmentTypeMenu();
         int option, equipmentType, minutes;
         String contractNumber;
-        LessonWithRental rentals[] = new LessonWithRental[2];
+        LessonWithRental rentals[] = new LessonWithRental[4];
         for (int i = 0; i < rentals.length; i++) {
             contractNumber = getContractNumber();
             minutes = getMinutes();
